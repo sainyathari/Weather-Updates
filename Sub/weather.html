@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ Weather Now</h1>
+    <button id="toggle-dark" class="tgl">Dark Mode</button>
+
+    <form id="weather-form">
+      <input type="text" id="city" placeholder="Enter city..." required />
+      <button type="submit">Get Weather</button>
+    </form>
+
+
+    <button id="get-location">Use My Location</button>
+
+
+    <div id="weather-result" class="weather-result-hidden">
+      <h2 id="city-name"></h2>
+      <img id="icon" />
+      <p id="temp"></p>
+      <p id="desc"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+
+
+
+    <div id="forecast" class="forecast hidden"><br>
+      <h3>5-Days Forecast</h3>
+      <div id="forecast-cards" class="forecast-cards"></div>
+    </div>
+
+
+    <p id="error-message" class="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
